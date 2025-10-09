@@ -1,1 +1,44 @@
+The Document Summarizer is a web-based application built using Streamlit that allows users to summarize any text quickly and efficiently using large language models (LLMs) provided via the Groq API. The app supports different input methods and summary styles, making it a flexible and user-friendly tool for working with long documents, articles, or notes.
 
+# Purpose
+
+The main goal of this app is to make summarization fast, accessible, and customizable by:
+
+Letting users paste or upload .txt files
+
+Providing summarization options like Brief, Detailed, or Bullet Points
+
+Utilizing Groq’s ultra-fast inference engine for large open-source models
+
+This is useful for students, researchers, content writers, and anyone who needs to quickly distill large amounts of text into manageable summaries.
+
+# How It Works
+1. User Interface – Built with Streamlit
+
+The app provides a clean UI with options to:
+
+Choose between text input or file upload
+
+Select a summarization style
+
+View or copy the generated summary
+
+Optional: download the summary as a .txt file
+
+2. Back-end Intelligence – Powered by Groq API
+
+The app uses Groq’s hosted LLMs (like openai/gpt-oss-20b)
+
+It sends a prompt to the model based on:
+
+The user's input text
+
+The selected summary style (e.g., "Brief", "Detailed", etc.)
+
+Receives a generated summary, which is then displayed to the user
+
+3. Environment Configuration – via .env
+
+The API key for Groq is stored securely using python-dotenv
+
+A .env.example file is shared for safe configuration without exposing secrets
